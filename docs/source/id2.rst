@@ -37,6 +37,35 @@ In ``compile.sh``:
 
 6. Change the necessary modules, and path for elpa to work. ScaLAPACK might not exist in the ELPA library, so path needed to be added separately in this case.
 
-In
+In ``gather_new.f90``:
+
+7. Change ``blocks`` to the value of ``nblk``
+8. Change ``bsize`` to no_atoms*3/blocks
+
+In ``convert_freqdat.f90``:
+
+9. Change natom at line 4.
+
+In the terminal:
+
+9. ``module purge``
+10. ``./compile.sh``
+11. ``sbatch eigen.pbs``
+
+12. ``module load intel``
+13. ``ifort -O2 gather_new.f90 -o gather.exe``
+14. ``./gather.exe``
+
+15. ``ifort -O2 convert_freqdat.f90 -o convert.exe``
+16. ``./convert.exe``
+
+DoS calculation
+------------------
+
+Use the Python script ``calc_DOS.py`` in the ``AmorFo/harmonic_properties_ELPA/dynmat_diagonalisation/DOS_calculation`` folder. Change axis names as needed.
+
+
+
+
 
 
