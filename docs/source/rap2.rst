@@ -11,6 +11,12 @@ The ``ASE_lammps_multi.py`` Python code provided reads a relaxed POSCAR file as 
 
 The GitHub folder contains submit files for the sulis and CSD3 clusters
 
+Requirements
+--------------
+
+* Lammps to be installed, along with the ``lammps`` Python package.
+* ``ase`` Python pakcage to be installed in Python.
+
 To use the code
 ----------------------
 
@@ -28,7 +34,7 @@ In the submit file of your cluster:
 
 7. Change the account name
 8. Change the number of tasks to the number you set in step 6.
-9. (Optional) Source your Python virtual environment where the ``lammps`` library is installed if it is not installed to the user.
+9. (Optional) Change modules to be loaded if necessary. Source your Python virtual environment where the ``lammps`` library is installed if it is not installed to the user.
 
 On the cluster terminal:
 
