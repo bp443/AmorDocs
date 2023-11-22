@@ -15,6 +15,7 @@ Requirements
 --------------
 
 * Lammps to be installed, along with the ``lammps`` Python package.
+* The `PACE <https://docs.lammps.org/Packages_details.html#pkg-ml-pace>_` package for LAMMPS installed for the ACE potential. Alternatively QUIP installed for GAP potential.
 * ``ase`` Python pakcage to be installed in Python.
 
 To use the code
@@ -36,7 +37,7 @@ In the submit file of your cluster:
 8. Change the number of tasks to the number you set in step 6.
 9. (Optional) Change modules to be loaded if necessary. Source your Python virtual environment where the ``lammps`` library is installed if it is not installed to the user.
 
-On the cluster terminal:
+On the terminal:
 
 10. Submit your job using the ``sbatch`` command. The part is under review for use on CSD3.
 
@@ -47,4 +48,6 @@ After finishing without errors:
 Known issues
 -------------
 
-On CSD3, the ``multiprocessing`` and the ``lammps`` Python packages do not work together.
+On CSD3, the ``multiprocessing`` and the ``lammps`` Python packages do not work together. In the future serial LAMMPS is probably going to be in use.
+
+
