@@ -1,25 +1,22 @@
-Welcome to Lumache's documentation!
+Welcome to AmorFo's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+RAPID heat conductivity calculation in amorphus solids using the AmorFo software.
 
 .. note::
 
-   This project is under active development.
+   This documentation is for testing purposes. This project is under active development.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   relax
+   rap2
+   id2
+   rap3
+   id3
    
    
-   This is just an example change to modify.
