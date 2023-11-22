@@ -44,6 +44,7 @@ On the terminal:
 After finishing without errors:
 
 11. Run the ``npz_hdf5.py`` script on the login node or on your computer to convert the sparse to the dense hdf5 formats.
+12. Output is ``fc2.hdf5``.
 
 Known issues
 -------------
