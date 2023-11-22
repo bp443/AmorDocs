@@ -7,7 +7,7 @@ The main code is contained in ``ASE_lammps_multi.py``.
 Description of the code
 -----------------------
 
-The ``ASE_lammps_multi.py`` Python code provided reads a relaxed POSCAR file as input. Using the ``ase.calculators.LAMMPSlib`` library, it computes the 2nd order force constant matrix of the given structure. The code utilises multiple CPUs using the ``multiprocessing`` Python library. The output ``fc2.npz`` file containing a sparse matrix then converted to the general hdf5 extension in dense matrix format with the ``npz_hdf5.py`` script, which also checks the sum rule.
+The ``ASE_lammps_multi.py`` Python code provided reads a relaxed POSCAR file as input. Using the ``ase.calculators.LAMMPSlib`` object, which imports the ``lammps`` package. It computes the 2nd order force constant matrix of the given structure. The code utilises multiple CPUs using the ``multiprocessing`` Python package. The output ``fc2.npz`` file containing a sparse matrix then converted to the general hdf5 extension in dense matrix format with the ``npz_hdf5.py`` script, which also checks the sum rule.
 
 The GitHub folder contains submit files for the sulis and CSD3 clusters
 
@@ -32,10 +32,13 @@ In the submit file of your cluster:
 
 On the cluster terminal:
 
-10. Submit your job using the ``sbatch`` command.
+10. Submit your job using the ``sbatch`` command. The part is under review for use on CSD3.
 
 After finishing without errors:
 
 11. Run the ``npz_hdf5.py`` script on the login node or on your computer to convert the sparse to the dense hdf5 formats.
 
+Known issues
+-------------
 
+On CSD3, the ``multiprocessing`` and the ``lammps`` Python packages do not work together.
