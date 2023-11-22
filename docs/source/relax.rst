@@ -32,3 +32,7 @@ After job returning without errors:
    * Stopping criterion is due to reaching energy tolerance.
 13. The relaxed structure will be in ``relaxed_structure_starting_point.POSCAR``.
 
+To use on different platforms
+---------------------------------
+
+At line 340, you might need to load modules, but this should work with load them previously in the control file.
