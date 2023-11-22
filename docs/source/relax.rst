@@ -1,6 +1,12 @@
 Relaxation
 ===========
 
+Requirements
+-------------
+
+* LAMMPS installed, no Python package is needed currently.
+* ``phonopy`` pakcage installed in Python. To be changed to ``ase``.
+
 How to use
 ------------
 
