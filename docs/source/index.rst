@@ -2,7 +2,7 @@ Welcome to AmorFo's documentation!
 ===================================
 
 
-RAPID heat conductivity calculation in amorphus solids using the AmorFo software.
+RAPID heat conductivity calculation in amorphous solids using the AmorFo software.
 
 .. note::
 
