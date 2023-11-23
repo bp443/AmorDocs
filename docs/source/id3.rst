@@ -36,9 +36,11 @@ The workflow countained in ``1SUBMIT.ctrl``:
 10. Perfom the first step of the linewidth calculation by executing ``gamma_step1.ex``.
 
 Contained in ``2SUBMIT.ctrl``:
+
 11. Perfom the second step of the linewidth calculation by executing ``gamma_step2.exe``
 
 Contained in ``3SUBMIT.ctrl``:
+
 13. Perform the third step of the linewidth calculation by executing ``gamma_step3.ex``.
 
 Outputs are:
@@ -48,3 +50,8 @@ Outputs are:
 * ``frequencies.dat`` - Frequencies from diagonalisation
 * ``eigenmodes.bin`` - Eigenmodes
 * ``gamma_TK_new.dat`` - Linewidths (maybe a factor of 2 is needed)
+
+Differences in ``master`` branch
+---------------------------------------
+
+Slight difference is that ``parse3d.py`` and ``d3.f90`` needs to be run to convert to dense matrix text file, then sparsify this. It takes ocnsiderable storage space and a bit of time, so these both are changed to ``parse3d_nonzero.py`` in the ``ID3-test`` branch. Removing older versions of ``mat2d`` and ``mat3d`` is necessary to have a correctly running code in this version. 
