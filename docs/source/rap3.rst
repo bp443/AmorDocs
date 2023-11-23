@@ -23,3 +23,10 @@ In ``submit``:
 8. Change ``--ntasks`` to the number you use for ``no_process`` in step 6.
 9. Change memory to your system default.
 10. Load the necessary modules and source your python virtual environment if needed.
+
+Output is a sparse matrix in ``fc3.dat``. To convert to dense hdf5:
+
+11. Change POSCAR name in ``convert_dat_hdf5.py``.
+12. Run Python script ``convert_dat_hdf5.py``.
+
+Output is ``fc3.hdf5``.
