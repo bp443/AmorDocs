@@ -43,8 +43,8 @@ Contained in ``3SUBMIT.ctrl``:
 
 Outputs are:
 
-*``mat2d.dat`` - fc2 in text format.
-*``mat3d_nonzero.dat`` - fc3 in sparse text format.
-*``frequencies.dat`` - Frequencies from diagonalisation
-*``eigenmodes.bin`` - Eigenmodes
-*``gamma_TK_new.dat`` - Linewidths (maybe a factor of 2 is needed)
+* ``mat2d.dat`` - fc2 in text format.
+* ``mat3d_nonzero.dat`` - fc3 in sparse text format.
+* ``frequencies.dat`` - Frequencies from diagonalisation
+* ``eigenmodes.bin`` - Eigenmodes
+* ``gamma_TK_new.dat`` - Linewidths (maybe a factor of 2 is needed)
