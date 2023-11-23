@@ -58,10 +58,12 @@ Wait till the job finishes.
 13. ``ifort -O2 gather_new.f90 -o gather.exe``
 14. ``./gather.exe``
 
-Convert to :math:`cm^{-1}`.
+Convert frequencies to :math:`cm^{-1}`.
 
 15. ``ifort -O2 convert_freqdat.f90 -o convert.exe``
 16. ``./convert.exe``
+
+Output is in ``frequencies_elpa_new.dat``.
 
 DoS calculation
 ------------------
