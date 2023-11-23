@@ -21,7 +21,10 @@ Requirements
 How to use
 ^^^^^^^^^^^
 
-1. Copy ``fc2.hdf5`` to the folder.
+1. Copy ``fc2.hdf5`` and your POSCAR structure file to the folder.
+
+2. Change the input filenames in ``1_fc2_to_true_dmat.py``.
+3. Run ``1_fc2_to_true_dmat.py`` script ot generate text file from hdf5. To launch on cluster, use the ``launch_1.ctrl`` file to submit after appropriate modifications.
 
 In ``test_real2.f90`` file:
 
