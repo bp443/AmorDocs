@@ -52,9 +52,13 @@ In the terminal:
 10. ``./compile.sh``
 11. ``sbatch eigen.pbs``
 
+Wait till the job finishes.
+
 12. ``module load intel``
 13. ``ifort -O2 gather_new.f90 -o gather.exe``
 14. ``./gather.exe``
+
+Convert to :math:`cm^{-1}`.
 
 15. ``ifort -O2 convert_freqdat.f90 -o convert.exe``
 16. ``./convert.exe``
