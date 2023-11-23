@@ -37,14 +37,16 @@ In the submit file of your cluster:
 8. Change the number of tasks to the number you set in step 6.
 9. (Optional) Change modules to be loaded if necessary. Source your Python virtual environment where the ``lammps`` library is installed if it is not installed to the user.
 
-On the terminal:
+In the terminal:
 
 10. Submit your job using the ``sbatch`` command. The part is under review for use on CSD3.
 
-After finishing without errors:
+After finishing without errors, convert sparse output to dense hdf5:
 
+10. Change POSCAR name if needed in ``npz_hdf5.py``.
 11. Run the ``npz_hdf5.py`` script on the login node or on your computer to convert the sparse to the dense hdf5 formats.
-12. Output is ``fc2.hdf5``.
+
+Output is ``fc2.hdf5``.
 
 Known issues
 -------------
