@@ -12,6 +12,7 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
 
    relax
    rap2
@@ -23,4 +24,6 @@ Installation guides
 -----------------------
 
 .. toctree::
+   :maxdepth: 2
+   
    archer2
