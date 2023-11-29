@@ -19,4 +19,8 @@ Contents
    rap3
    id3
    
-   
+Installation guides
+-----------------------
+
+.. toctree::
+   archer2
