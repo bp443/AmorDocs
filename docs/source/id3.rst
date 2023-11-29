@@ -55,3 +55,9 @@ Differences in ``master`` branch
 ---------------------------------------
 
 Slight difference is that ``parse3d.py`` and ``d3.f90`` needs to be run to convert to dense matrix text file, then sparsify this. It takes ocnsiderable storage space and a bit of time, so these both are changed to ``parse3d_nonzero.py`` in the ``ID3-test`` branch. Removing older versions of ``mat2d`` and ``mat3d`` is necessary to have a correctly running code in this version. 
+
+
+Known issues
+-------------
+
+A bug has been fixed on 28/11/2023. An extra do loop was removed.
