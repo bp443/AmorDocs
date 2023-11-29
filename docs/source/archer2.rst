@@ -4,18 +4,18 @@ Installation instructions for Archer2
 Python venvs
 ------------
 
-::
+.. code:: bash
 
    python -m venv --system-site-packages venv_name
 
 QUIP
 ----
 
-::
+.. code:: bash
 
    cd /work/e89/e89/bp443
 
-::
+.. code:: bash
 
    module restore
    module load cpe
@@ -26,37 +26,44 @@ QUIP
    module load cray-python
    export LD_LIBRARY_PATH=$CRAY_LD_LIBRARY_PATH:$LD_LIBRARY_PATH#
 
-::
+.. code:: bash
 
    git clone --recursive https://github.com/libAtoms/QUIP.git
 
-::
+.. code:: bash
 
    export QUIP_ARCH=archer2
    export QUIP_ROOT="/work/e89/e89/bp443/programs/QUIP"
 
-::
+.. code:: bash
 
    cd QUIP
    make config
 
+
 In the config, accept all the default options with the following two
 exceptions:
 
-Would you like to compile with GAP support ? [y] Would you like to
-compile with many-body dispersion support ? [y]
+:: 
 
-::
+   Would you like to compile with GAP support ?
+   [y] 
+
+   Would you like to
+   compile with many-body dispersion support ?
+   [y]
+
+.. code:: bash
 
    make
 
-::
+.. code:: bash
 
 
    mkdir quip_installation_directory
    export QUIP_INSTALLDIR=/work/e89/e89/bp443/programs/QUIP/quip_installation_directory
 
-::
+.. code:: bash
 
    make install
    make libquip
@@ -64,7 +71,7 @@ compile with many-body dispersion support ? [y]
 LAMMPS
 --------
 
-::
+.. code:: bash
 
    module restore
    module load cpe
@@ -75,12 +82,12 @@ LAMMPS
    module load cray-python
    export LD_LIBRARY_PATH=$CRAY_LD_LIBRARY_PATH:$LD_LIBRARY_PATH
 
-::
+.. code:: bash
 
    wget https://download.lammps.org/tars/lammps-stable.tar.gz
    tar -xzf lammps-stable.tar.gz
 
-::
+.. code:: bash
 
    mv lammps-2Aug2023 lammps
    cd lammps
@@ -88,20 +95,20 @@ LAMMPS
    cd build
    wget -O libpace.tar.gz https://github.com/wcwitt/lammps-user-pace/archive/main.tar.gz
 
-::
+.. code:: bash
 
    export QUIP_ARCH=archer2
    export QUIP_ROOT="/work/e89/e89/bp443/programs/QUIP"
 
 This part seems to be only working with user python. no venv:
 
-::
+.. code:: bash
 
    source /work/e89/e89/bp443/programs/python-venv/bin/activate
    export VENV_LIB_PATH=$VIRTUAL_ENV 
    deactivate
 
-::
+.. code:: bash
 
    cmake ../cmake/ -DCMAKE_CXX_COMPILER=CC -DBUILD_MPI=on -D BUILD_OMP=yes -D FFT=FFTW3         \
    -D FFTW3_INCLUDE_DIR=${FFTW_INC}                                      \
@@ -116,16 +123,11 @@ This part seems to be only working with user python. no venv:
    -D Python_EXECUTABLE=$(which python) \
    #-D CMAKE_INSTALL_PREFIX=$VENV_LIB_PATH
 
-::
-
-   make -j 8
-   make install
-
-::
+.. code:: bash
 
    source /work/e89/e89/bp443/programs/python-venv/bin/activate
 
-::
+.. code:: bash
 
    make install-python
 
@@ -144,11 +146,11 @@ ELPA
    module load PrgEnv-gnu
    module load mkl
 
-::
+.. code:: bash
 
    wget https://elpa.mpcdf.mpg.de/software/tarball-archive/Releases/2023.11.001.rc1/elpa-2023.11.001.rc1.tar.gz
 
-::
+.. code:: bash
 
    tar -xzf elpa-2023.11.001.rc1.tar.gz
    mv elpa-2023.11.001.rc1 elpa
@@ -183,7 +185,7 @@ Compilation
      -L${MKLROOT}/lib/intel64 -lmkl_scalapack_lp64 -Wl,--no-as-needed -lmkl_gf_lp64 -lmkl_gnu_thread -lmkl_core -lmkl_blacs_intelmpi_lp64 -lgomp -lpthread -lm -ldl \
        -o elpa_eigen.exe
 
-I am not sure about this, it seems to be working so I dont wanna modify
+I am not sure about this, it seems to be working so I don't want to modify
 it.
 
 Run
@@ -223,3 +225,4 @@ Run
 
    srun -c $SLURM_CPUS_PER_TASK ./elpa_eigen.exe
    echo "Job finished: " `date`
+
