@@ -73,7 +73,10 @@ DoS calculation
 
 Use the Python script ``calc_DOS.py`` in the ``AmorFo/harmonic_properties_ELPA/dynmat_diagonalisation/DOS_calculation`` folder. Change axis names as needed.
 
+Known issues
+-------------
 
+A bug has been fixed on 28/11/2023.
 
 
 
