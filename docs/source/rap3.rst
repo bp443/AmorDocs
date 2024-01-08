@@ -40,7 +40,7 @@ After finishing without errors, collect the output files:
 
 .. math:
 
-i, \\alpha ,j, \\beta ,k, \\gamma
+   testi, \\alpha ,j, \\beta ,k, \\gamma
 
 order.
 
