@@ -36,7 +36,7 @@ In the terminal:
 After finishing without errors, collect the output files:
 
 12. Change POSCAR name if needed in ``RAP3_collect.py``, and change the sum rule if needed. Square sum minimisation of the translational sum rule is being implemented in the near future, a very simple rule is implemented instead at the moment.
-13. Run the ``RAP3_collect.py`` script to collect the partial results to the ``fc3.hdf5`` file containing a COO sparse matrix under the "fc3" dataset, in a $$M\times 7$$ float64 matrix with the first 6 columns being the coordinates in $$i,\alpha,j,\beta,k,\gamma$$ order.
+13. Run the ``RAP3_collect.py`` script to collect the partial results to the ``fc3.hdf5`` file containing a COO sparse matrix under the "fc3" dataset, in a :math:`M\times 7` float64 matrix with the first 6 columns being the coordinates in :math:`i,\alpha,j,\beta,k,\gamma` order.
 
 
 OLD VERSION
