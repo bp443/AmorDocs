@@ -22,7 +22,7 @@ To use the code
 
 1. Copy relaxed POSCAR into folder.
 
-To use the Regiona Acceleration Protocol (RAP), in ``calc_NL.py`` configure the variables identically to ``RAP2_MPI_bcast.py``. ``FC2_cutoff`` determines the radius within the forces are saved to the FC2 matrix. ``Force_cutoff`` determines the force range, so the atoms to be included in RAP are within radius of ``FC2_cutoff`` + ``Force_cutoff``.
+To use the Regional Acceleration Protocol (RAP), in ``calc_NL.py`` configure the variables identically to ``RAP2_MPI_bcast.py``. ``FC2_cutoff`` determines the radius within the forces are saved to the FC2 matrix. ``Force_cutoff`` determines the force range, so the atoms to be included in RAP are within radius of ``FC2_cutoff`` + ``Force_cutoff``.
 
 In ``RAP2_MPI_bcast.py``\:
  
