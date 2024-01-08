@@ -39,7 +39,8 @@ After finishing without errors, collect the output files:
 13. Run the ``RAP3_collect.py`` script to collect the partial results to the ``fc3.hdf5`` file containing a COO sparse matrix under the "fc3" dataset, in a :math:`M \\times 7` float64 matrix with the first 6 columns being the coordinates in  
 
 .. math:
-i, \\alpha,j, \\beta,k, \\gamma
+
+i, \\alpha ,j, \\beta ,k, \\gamma
 
 order.
 
