@@ -1,7 +1,7 @@
 RAP2 - Interatomic Force Constant calculation
 =============================================
 
-Latest code available on the `AMorFo project GitHub page <https://github.com/WignerTransport/AmorFo/tree/master>_`, under ``dynmat_lammps/dynmat_ACE_region``.
+Latest code available on the `AMorFo project GitHub page <https://github.com/WignerTransport/AmorFo/tree/master>_`, under ``dynmat_lammps/RAP2_MPI``.
 The main code is contained in ``ASE_lammps_multi.py``.
 
 Description
