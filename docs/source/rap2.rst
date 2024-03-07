@@ -50,24 +50,24 @@ After finishing without errors, collect the output files:
 13. Run the ``RAP2_collect.py`` script to collect the partial results to the ``fc2.hdf5`` file containing a dense matrix under the "fc2" dataset.
 
 OLD VERSION DOCUMENTATION
-==========================
+----------------------------
 
 Description of the ``multiprocessing`` code
-------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The ``ASE_lammps_multi.py`` Python code provided reads a relaxed POSCAR file as input. Using the ``ase.calculators.LAMMPSlib`` object, which imports the ``lammps`` package. It computes the 2nd order force constant matrix of the given structure. The code utilises multiple CPUs using the ``multiprocessing`` Python package. The output ``fc2.npz`` file containing a sparse matrix then converted to the general hdf5 extension in dense matrix format with the ``npz_hdf5.py`` script, which also checks the sum rule.
 
 The GitHub folder contains submit files for the sulis and CSD3 clusters
 
 Requirements
---------------
+^^^^^^^^^^^^^^^^^
 
 * Lammps to be installed, along with the ``lammps`` Python package.
 * The `PACE <https://docs.lammps.org/Packages_details.html#pkg-ml-pace>_` package for LAMMPS installed for the ACE potential. Alternatively QUIP installed for GAP potential.
 * ``ase`` Python pakcage to be installed in Python.
 
 To use the code
-----------------------
+^^^^^^^^^^^^^^^^^^^^
 
 1. Copy relaxed POSCAR into folder.
 
@@ -97,7 +97,7 @@ After finishing without errors, convert sparse output to dense hdf5:
 Output is ``fc2.hdf5``.
 
 Known issues
--------------
+^^^^^^^^^^^^^^^
 
 On CSD3, the ``multiprocessing`` and the ``lammps`` Python packages do not work together. In the future serial LAMMPS is probably going to be in use.
 
