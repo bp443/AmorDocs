@@ -46,10 +46,10 @@ order.
 
 
 OLD VERSION
-==========
+------------
 
 How to use
------------
+^^^^^^^^^^^^
 
 1. Copy POSCAR structure file to the folder.
 
