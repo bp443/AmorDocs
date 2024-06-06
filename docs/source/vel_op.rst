@@ -1,7 +1,7 @@
 Velocity Operator Calculation
 =======================================
 
-To calculate the velocity operator, you can use the in-house code which is based on BLAS. On AMD processors (Archer2, Sulis, Kelvin2) use `OpenBLAS` (or `Cray-LibSci` for Archer2), and on Intel CPUs, use MKL.
+To calculate the velocity operator, you can use the in-house code which is based on BLAS. On AMD processors (Archer2, Sulis, Kelvin2) use `OpenBLAS` (or `Cray-LibSci` for Archer2), and on Intel CPUs, use MKL. Code is at `/harmonic_properties_ELPA/vel_operator/vij_fast` on the AmorFo github.
 
 Requirements
 -------------
